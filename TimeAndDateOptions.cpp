@@ -104,7 +104,7 @@ int TimeAndDateOptions::calculateWaitingTime() {
 
 	// or you could have a different function, which will get the time that is was called
 	// then pass it into this function before it gets it current time in this function
-	Sleep(61000);
+	Sleep(5000);
 
 	// get time after 5 second delay
 	time_t afterDelay = time(0);
