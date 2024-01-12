@@ -3,6 +3,8 @@
 #include <sstream>
 #include <iomanip>
 #include <windows.h>
+
+// constructor for TimeAndDateOptions
 TimeAndDateOptions::TimeAndDateOptions() {}
 
 // Function: GetTime
@@ -74,8 +76,10 @@ std::string TimeAndDateOptions::GetDate()
 
 	// Convert the formatted date from the string stream to a string and return it
 	return oss.str();
-}
+} // end of GetDate
 
+// Function: DifferenceBetweenTimes
+// Objective: take the waiting time and convert into format 0h, 0m, 0s.
 std::string TimeAndDateOptions::DifferenceBetweenTimes()
 {
 	// get the waiting time from the other function
@@ -91,9 +95,10 @@ std::string TimeAndDateOptions::DifferenceBetweenTimes()
 
 	// outupt the formated waiting time
 	return formattedWaitingTime;
-}
+} // end of DifferenceBetweenTimes
 
-// Function to calculate the waiting time based on the difference between it and the entry time 
+// Function: calculateWaitingTime
+// Objective: to calculate the waiting time based on the difference between it and the afterDelay time 
 int TimeAndDateOptions::calculateWaitingTime() {
 	// Get current time
 	time_t now = time(0);
