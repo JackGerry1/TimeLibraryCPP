@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FormattedTime.cpp">
+    <ClCompile Include="TimeAndDateOptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FormattedTime.h">
+    <ClInclude Include="TimeAndDateOptions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
